@@ -1,0 +1,20 @@
+Zad.1/
+ojciec(karol,jan).
+ojciec(karol,adam).
+dziecko(tomasz,jan).
+dziecko(piotr,adam).
+dziecko(karol,marek).
+dziadek(X,Y):-ojciec(X,Z),dziecko(Y,Z)
+
+drzewo poszukiwania rozwi¹zania dla: 
+?-dziadek(X,piotr).
+
+
+
+Zad.2.
+p(a,d).
+p(X,Y):-q(X,Z),v(Z,Y).
+q(a,b).
+q(c,a).
+v(a,d).
+v(b,c).
